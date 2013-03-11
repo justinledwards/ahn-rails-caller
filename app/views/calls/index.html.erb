@@ -1,0 +1,8 @@
+<h2>Adhearsion Caller</h2>
+<p>This example was made to have an easy to use load tester for our QA team.</p>
+<%= simple_form_for :call do |f| %>
+  <%= f.input :call_count, label: 'Number of Calls' %>
+  <%= f.input :to_number, label: 'Phone Number To Call' %>
+  <%= f.input :from_number, label: 'Caller ID to Show' %>
+  <%= f.submit 'Make Calls' %>
+<% end %>

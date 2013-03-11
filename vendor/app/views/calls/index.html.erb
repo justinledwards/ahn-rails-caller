@@ -1,0 +1,8 @@
+<h2>QA Call Load Tester</h2>
+<p>This is for testing the ICOA TLVX System.</p>
+<%= simple_form_for :call do |f| %>
+  <%= f.input :call_count, label: 'Number of Calls' %>
+  <%= f.input :to_number, label: 'Phone Number To Call' %>
+  <%= f.input :from_number, label: 'Caller ID to Show' %>
+  <%= f.submit 'Make Calls' %>
+<% end %>
